@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      profile: local
+      fail-fast: true
+  config:
+    import: optional:configserver:http://localhost:8888
+
+logging: # 로깅
+  level: # 로깅 레벨
+    root: info # 로킹 레벨 설정
